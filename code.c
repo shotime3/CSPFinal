@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sting.h>
 
 int main(){
 	char input1[256], Utimezone[256];

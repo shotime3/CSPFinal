@@ -18,7 +18,7 @@
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
          $arg2 = test_input($_POST["arg2"]);
-         exec("/usr/lib/cgi-bin/sp1a/code " . $arg1 . " " . $arg2, $output, $retc);
+         exec("/usr/lib/cgi-bin/sp1a/codemain " . $arg1 . " " . $arg2, $output, $retc);
        }
 
        function test_input($data) {

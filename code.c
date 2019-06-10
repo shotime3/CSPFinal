@@ -53,16 +53,17 @@ int DisplayTime(int argc, char* argv[]){
 		//time ( &rawtime );
 		//timeinfo = localtime ( &rawtime );
 		//printf ( "Current local time and date in %s: %s", argv[2], asctime (timeinfo) );
-		 if (hours < 12) // before midday
+		 if (hours < 12){ // before midday
                 printf("Time is : %02d:%02d:%02d am\n", hours, minutes, seconds);
-
-        else    // after midday
+		}
+        	else{    // after midday
 
 		for (int i = 0; i < 2; i++){
 			alphabet[i] = 0x54 + 15i;
 			printf("%c",alphabet[i]); 
 		}
                 printf("me is : %02d:%02d:%02d pm\n", hours - 12, minutes, seconds);
+		}
 
         // print current date
         printf("Date is : %02d/%02d/%d\n", day, month, year);
